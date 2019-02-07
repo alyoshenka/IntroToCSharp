@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2047
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagingErrors", "ManagingErrors\ManagingErrors.csproj", "{AD65EB1D-C8B6-442D-84BA-0371F2A39C57}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vec3Calc", "Vec3Calc\Vec3Calc.csproj", "{0184FDDE-7710-45F6-9E04-3DE508DFFC85}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AD65EB1D-C8B6-442D-84BA-0371F2A39C57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD65EB1D-C8B6-442D-84BA-0371F2A39C57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD65EB1D-C8B6-442D-84BA-0371F2A39C57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0184FDDE-7710-45F6-9E04-3DE508DFFC85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0184FDDE-7710-45F6-9E04-3DE508DFFC85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0184FDDE-7710-45F6-9E04-3DE508DFFC85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0184FDDE-7710-45F6-9E04-3DE508DFFC85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
