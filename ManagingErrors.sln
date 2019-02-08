@@ -11,7 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appy1", "Appy1\Appy1.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LevelEditor", "LevelEditor\LevelEditor.csproj", "{AB54BBBC-2683-4F19-B4B1-DE9CA2AE0B91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExternLib", "ExternLib\ExternLib.csproj", "{BFF33E85-640D-411A-ADAB-34006513BE67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExternLib", "ExternLib\ExternLib.csproj", "{BFF33E85-640D-411A-ADAB-34006513BE67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomSerializer", "CustomSerializer\CustomSerializer.csproj", "{87C98557-548E-45B3-940D-BAA5D79793B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{BFF33E85-640D-411A-ADAB-34006513BE67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFF33E85-640D-411A-ADAB-34006513BE67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFF33E85-640D-411A-ADAB-34006513BE67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87C98557-548E-45B3-940D-BAA5D79793B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87C98557-548E-45B3-940D-BAA5D79793B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87C98557-548E-45B3-940D-BAA5D79793B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87C98557-548E-45B3-940D-BAA5D79793B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
