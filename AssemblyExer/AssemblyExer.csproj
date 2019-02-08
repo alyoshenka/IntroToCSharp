@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AD65EB1D-C8B6-442D-84BA-0371F2A39C57}</ProjectGuid>
+    <ProjectGuid>{91002F3F-F966-41FF-A051-9F7E842088AC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ManagingErrors</RootNamespace>
-    <AssemblyName>ManagingErrors</AssemblyName>
+    <RootNamespace>AssemblyExer</RootNamespace>
+    <AssemblyName>AssemblyExer</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,14 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GameState.cs" />
-    <Compile Include="ILogger.cs" />
-    <Compile Include="LoggerTest.cs" />
-    <Compile Include="PlayerA.cs" />
-    <Compile Include="Polygon2D.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Program.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vector3.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
