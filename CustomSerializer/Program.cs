@@ -26,6 +26,8 @@ namespace CustomSerializer
 
             Test1 t3 = new Test1();
             t3 = Deserialize<Test1>("t1.txt"); //???
+
+
             Serialize(t3, "t3.txt");
         }
 
@@ -40,7 +42,6 @@ namespace CustomSerializer
                 // if(line.GetCustomAttribute() == typeof(DNS)) { continue; }
                 var val = line.GetValue(obj);
                 sb.Append(line.Name + "=" + val);
-                // Console.WriteLine(line.Name + "=" + val);
                 sb.AppendLine();
             }
             sb.AppendLine();
@@ -50,15 +51,10 @@ namespace CustomSerializer
             FileStream fs = new FileStream(file, FileMode.OpenOrCreate);
             StreamWriter sw = new StreamWriter(fs);
             sw.Write(toSave);
-            // fs.Write(toSave);
-            // do i need all these?
             fs.Flush();
             sw.Flush();
             sw.Close();
             fs.Close();
-
-            // Console.WriteLine(toSave);
-            // Console.Read();
         }
 
         public static T Deserialize<T>(string file)
@@ -66,7 +62,6 @@ namespace CustomSerializer
             var temp = Activator.CreateInstance<T>(); // does this create <t> object?
             try
             {                
-                // var myType = obj.GetType();
                 StreamReader sr = new StreamReader(file);
                 // lines
                 List<string> lines = new List<string>();
@@ -76,8 +71,11 @@ namespace CustomSerializer
                 } 
                 // parse string
                 foreach(string line in lines)
-                {                   
-                    // FieldInfo fi = 
+                {
+                    string fieldName = line.Split('=')[0];
+                    string fieldValue = line.Split('=')[1];
+                    var f = temp.GetType().GetField(fieldName);
+                    f.SetValue(temp, fieldValue);
                 }
 
                 sr.Close();
