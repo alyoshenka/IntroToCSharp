@@ -1,0 +1,35 @@
+﻿<Window x:Class="LINQ.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LINQ"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="500">
+    <Window.Resources>
+        <DataTemplate x:Key="hsTemplate">
+            <StackPanel Orientation="Horizontal">
+                <StackPanel.Resources>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="Margin" Value="3,3,5,3"/>
+                    </Style>
+                </StackPanel.Resources>
+                <TextBlock Text="{Binding Path=Rank}"/>
+                <TextBlock Text="{Binding Path=Name}"/>
+                <TextBlock Text="{Binding Path=Score}"/>
+            </StackPanel>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid Margin="5,5,5,5">
+        <ListBox ItemsSource="{Binding}" ItemTemplate="{DynamicResource hsTemplate}" x:Name="hsList" Margin="10,10,186,118" SelectionChanged="hsList_SelectionChanged" />
+        <Label Content="Player Data" FontSize="20" Height="40" Margin="336,12,33,0" VerticalAlignment="Top" Width="113" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Label Content="Name" FontSize="15" Height="40" Margin="336,52,33,0" VerticalAlignment="Top" Width="113" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="nameTB" FontSize="15" Height="40" Margin="336,92,33,0" VerticalAlignment="Top" Width="113" VerticalContentAlignment="Center"/>
+        <Label Content="HighScore" FontSize="15" Height="40" Margin="336,132,33,0" VerticalAlignment="Top" Width="113" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="hsTB" FontSize="15" Height="40" Margin="336,172,33,0" VerticalAlignment="Top" Width="113" VerticalContentAlignment="Center"/>
+        <Label Content="Rank" FontSize="15" Height="40" Margin="336,212,33,0" VerticalAlignment="Top" Width="113" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="rankTB" FontSize="15" Height="40" Margin="336,252,33,0" VerticalAlignment="Top" Width="113" VerticalContentAlignment="Center" TextChanged="TextBox_TextChanged"/>
+        <Button Content="Apply Data" Click="ApplyData" HorizontalAlignment="Left" Height="72" Margin="336,318,0,0" VerticalAlignment="Top" Width="113"/>
+        <TextBlock x:Name="errorTB" HorizontalAlignment="Left" Height="72" Margin="56,318,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="211"/>
+    </Grid>
+</Window>

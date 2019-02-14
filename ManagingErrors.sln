@@ -15,6 +15,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExternLib", "ExternLib\Exte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomSerializer", "CustomSerializer\CustomSerializer.csproj", "{87C98557-548E-45B3-940D-BAA5D79793B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", "{830BB426-5090-4AB6-A1F1-25295F02117D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteamQuery", "SteamQuery\SteamQuery.csproj", "{AC7B7ABA-0D28-4F48-80E7-B23C06B01908}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{87C98557-548E-45B3-940D-BAA5D79793B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87C98557-548E-45B3-940D-BAA5D79793B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87C98557-548E-45B3-940D-BAA5D79793B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{830BB426-5090-4AB6-A1F1-25295F02117D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{830BB426-5090-4AB6-A1F1-25295F02117D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{830BB426-5090-4AB6-A1F1-25295F02117D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{830BB426-5090-4AB6-A1F1-25295F02117D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC7B7ABA-0D28-4F48-80E7-B23C06B01908}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC7B7ABA-0D28-4F48-80E7-B23C06B01908}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC7B7ABA-0D28-4F48-80E7-B23C06B01908}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC7B7ABA-0D28-4F48-80E7-B23C06B01908}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
